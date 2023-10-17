@@ -31,7 +31,7 @@ variable "common_tags" {
 
 variable "instance_type" {
   type        = string
-  default     = "m5.xlarge"
+  default     = "t2.micro"
   description = "EC2 instance type"
 }
 
@@ -82,7 +82,7 @@ variable "lb_type" {
 
 variable "node_count" {
   type        = number
-  default     = 5
+  default     = 3
   description = "Number of Vault nodes to deploy in ASG"
 }
 
